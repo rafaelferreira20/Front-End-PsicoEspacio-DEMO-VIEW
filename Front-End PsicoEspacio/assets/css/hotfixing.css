@@ -1,0 +1,103 @@
+.card-salud-mental:hover {
+    background: #FFCC70;
+    transition: 0.7s;
+}
+
+.card-salud-mental:hover h2 {
+    color: white;
+}
+
+.card-salud-mental:hover .card-progress > small {
+    color: white;
+}
+
+.card-videos:hover {
+    background: #0F2C59;
+    transition: 0.7s;
+}
+
+.card-videos:hover h2 {
+    color: white;
+}
+
+.card-videos:hover .card-progress > small {
+    color: white;
+}
+
+.card-juegos:hover {
+    background: #C70039;
+    transition: 0.7s;
+}
+
+.card-juegos:hover h2 {
+    color: white;
+}
+
+.card-juegos:hover .card-progress > small {
+    color: white;
+}
+
+.card-soporte:hover {
+    background: #35A29F;
+    transition: 0.7s;
+}
+
+.card-soporte:hover h2 {
+    color: white;
+}
+
+.card-soporte:hover .card-progress > small {
+    color: white;
+}
+
+.sign-out > a{
+    text-decoration: none;
+}
+
+.sign-out > a:visited{
+    color: black;
+}
+
+.notify-icon:hover {
+    cursor: pointer;
+}
+
+.submenu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.submenu-wrap.open-menu{
+    max-height: 100vh;
+}
+
+.submenu {
+    background-color: #7D7C7C;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.user-info h4 {
+    font-weight: 900;
+}
+
+/* -1000% */
+/* Wacky responsive hack to be fixed */
+@media screen and (max-width: 992px) {
+    .submenu-wrap {
+        right: -1000%;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recuperar mi cuenta</title>
+
+    <link rel="icon" href="assets/images/LOGO PSICOESPACIO .jpeg">
+    <!-- Enlace al archivo CSS en la carpeta "css" -->
+    <link rel="stylesheet" href="assets/css/recover.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/raw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="#" method="post" onsubmit="return validarCorreo()">
+                    <h2>Recuperar mi cuenta</h2>
+                    <h3>PsicoEspacio</h3>
+
+                    <div class="input-contenedor">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" required class="email-input" id="email" name="email">
+                        <label for="email" class="email-label">Introduce tu correo electrónico:</label>
+                    </div>
+
+                    <button type="submit" onclick="openPopup()">Enviar Código</button>
+
+                </form>
+
+                <div class="registrar">
+                    <p><a href="SignIn.html">Volver al inicio de sesión</a></p>
+                </div>
+            </div>
+
+            <div class="pop-up" id="popup">
+                <img src="assets/images/404-tick.png">
+                <h2>Código Enviado</h2>
+                <p>Se ha enviado un código de verificación para poder verificar que usted es la persona correcta, puede seguir con el siguiente paso para recuperar su cuenta.</p>
+                <button type="button" onclick="window.location.href = 'recover2.html'">Digitar código verficación</button>
+            </div>
+
+        </div>
+
+
+        
+        <div id="reloj">
+            <span id="hora"></span> :
+            <span id="minutos"></span> :
+            <span id="segundos"></span>
+        </div>      
+        
+        <a href="index.html" class="btn" style="--clr:#7371fc;"><span>Principal</span></a>
+        
+    </section>
+
+
+
+    <script>
+        let popup = document.getElementById("popup");
+        let formulario = document.getElementById("formulario");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+            formulario.classList.add("formulario-gone");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        function prevent(){
+            return false;
+        }
+    </script>
+
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/reloj.js"></script>
+    <script src="assets/js/button.js"></script>
+
+
+</body>
+</html>

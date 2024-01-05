@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <title>Paciente PsicoEspacio</title>
+
+    <link rel="icon" href="assets/images/LOGO PSICOESPACIO .jpeg">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/hotfixing.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3>PsicoEspacio</h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(#)"></div>
+                <h4>Rafael Ferreira</h4>
+                <small>Paciente</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="user.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Principal</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="perfil.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Perfil</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="chats.html">
+                            <span class="las la-envelope"></span>
+                            <small>Chat</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="consultas.html">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Consultas</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="Servicesuser.html">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Servicios</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="testimonios.html">
+                            <span class="las la-tasks"></span>
+                            <small>Testimonios</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        
+        <header class="main-header-user">
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="">
+                       
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope" id="envelope" onclick="toggleMenuEnvelope()"></span>
+                        <span class="notify">4</span>
+
+                        <div class="submenu-wrap" id="subMenu">
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="notify-icon">
+                        <span class="las la-bell" onclick="toggleMenuBell()"></span>
+                        <span class="notify">3</span>
+
+                        <div class="submenu-wrap" id="subMenuBell">
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(imagendelusuario)"></div>
+                        
+                        <span class="las la-power-off" style="cursor: pointer;"></span>
+                        <span class="sign-out" ><a href="SignIn.html">Cerrar Sesion</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <main>
+            
+            <div class="page-header">
+                <h1>Bienvenido a PsicoEspacio</h1>
+                <small>Inicio / Panel Central</small>
+            </div>
+            
+            <div class="page-content">
+            
+                <div class="analytics">
+                    <a href="mentalhealthish.html">
+                        <div class="card card-salud-mental">
+                            <div class="card-head">
+                                <h2>Salud Mental</h2>
+                                <span class="las la-brain"></span>
+                                <!-- <i class="las la-brain"></i> -->
+                            </div>
+                            <div class="card-progress">
+                                <small>Conoce información sobre la salud mental, causas, consecuencias, prevenciones.</small>
+                                
+                            </div>
+                        </div>
+                    </a>
+                    <a href="videos.html">
+                        <div class="card card-videos">
+                            <div class="card-head">
+                                <h2>Vídeos</h2>
+                                <span class="las la-video"></span>
+                                <!-- <i class="las la-video"></i> -->
+                            </div>
+                            <div class="card-progress">
+                                <small>Mira vídeos relacionados a la salud mental, dinámicas, consejos, testimonios, informaciones...</small>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="game.html">
+                        <div class="card card-juegos">
+                            <div class="card-head">
+                                <h2>Juegos</h2>
+                                <span class="las la-gamepad"></span>
+                                <!-- <i class="las la-gamepad"></i> -->
+                            </div>
+                            <div class="card-progress">
+                                <small>Participa en juegos de salud mental a modo de análisis para saber tu estado mental y así comenzar tus pruebas.</small>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="soporte.html">
+                        <div class="card card-soporte">
+                            <div class="card-head">
+                                <h2>Soporte Técnico</h2>
+                                <span class="las la-tools"></span>
+                                <!-- <i class="las la-tools"></i> -->
+                            </div>
+                            <div class="card-progress">
+                                <small>Si tienes alguna queja, reclamación o sugerencia da click aquí y dejanos saber.</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Gestión de citas</span>
+                        </div>
+
+                        <div class="browse">
+                           <input type="search" placeholder="Buscar" class="record-search">
+                            <select name="Estado" id="">
+                                <option value="">Estado</option>
+                                <option value="">Seguimiento</option>
+                                <option value="">Culminado</option>
+                                <option value="">Proximamente</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th><span class="las la-sort"></span> Psicólogo</th>
+                                    <th><span class="las la-sort"></span> Fecha de cita</th>
+                                    <th><span class="las la-sort"></span> Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(#)"></div>
+                                            <div class="client-info">
+                                                <h4>Rafael Matos</h4>
+                                                <small>rafael.matos@itla.edu.do</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        19 noviembre, 2023
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane" style="cursor: pointer;"></span>
+                                            <span class="las la-eye" style="cursor: pointer;"></span>
+                                            <span class="las la-ellipsis-v" style="cursor: pointer;"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5034</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(#)"></div>
+                                            <div class="client-info">
+                                                <h4>Angel Rafael</h4>
+                                                <small>angel.rafael@itla.edu.do</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        20 diciembre, 2023
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane" style="cursor: pointer;"></span>
+                                            <span class="las la-eye" style="cursor: pointer;"></span>
+                                            <span class="las la-ellipsis-v" style="cursor: pointer;"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>        
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            
+            </div>
+            
+        </main>
+        <script src="assets/js/notif.js"></script>
+        <script src="assets/js/loader.js"></script>
+    </div>
+</body>
+</html>

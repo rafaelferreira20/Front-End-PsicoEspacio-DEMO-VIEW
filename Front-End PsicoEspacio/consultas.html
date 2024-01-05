@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <title>Paciente PsicoEspacio</title>
+
+    <link rel="icon" href="assets/images/LOGO PSICOESPACIO .jpeg">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/hotfixing.css">
+    <link rel="stylesheet" href="assets/css/consulting.css">
+    <link rel="stylesheet" href="assets/css/PayForm.css">
+    <link rel="stylesheet" href="assets/css/loadpay.css">
+    <link rel="stylesheet" href="assets/css/act_popup.css">
+</head>
+
+<style>
+    #modal {
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 0px;
+        /* margin: 0 auto; */
+    }
+
+     /* Add some styles for the loader */
+    #loader {
+      display: none;
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -25px;
+      margin-left: -25px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+</style>
+
+<body>
+   <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3>PsicoEspacio</h3>
+        </div>
+        
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(#)"></div>
+                <h4>Rafael Ferreira</h4>
+                <small>Paciente</small>
+            </div>
+
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="user.html">
+                            <span class="las la-home"></span>
+                            <small>Principal</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="perfil.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Perfil</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="chats.html">
+                            <span class="las la-envelope"></span>
+                            <small>Chats</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="consultas.html" class="active">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Consultas</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="Servicesuser.html">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Servicios</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="testimonios.html">
+                            <span class="las la-tasks"></span>
+                            <small>Testimonios</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="pop-up" id="popup">
+            <img src="assets/images/404-tick.png">
+            <h2>Transaccion en Proceso</h2>
+            <p>Verifique con su cuenta de banco!</p>
+            <button type="button" onclick="window.location.href = 'pago_exito.html'">Continuar</button>
+        </div>
+        <header class="main-header-user">
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="">
+                       
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope" id="envelope" onclick="toggleMenuEnvelope()"></span>
+                        <span class="notify">4</span>
+
+                        <div class="submenu-wrap" id="subMenu">
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="notify-icon">
+                        <span class="las la-bell" onclick="toggleMenuBell()"></span>
+                        <span class="notify">3</span>
+
+                        <div class="submenu-wrap" id="subMenuBell">
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="user">
+                        <!-- EN ESTE DIV PONER LA IMAGEN DEL USUARIO DESDE EL BACKEND -->
+                        <div class="bg-img"></div>
+                        
+                        <span class="las la-power-off" style="cursor: pointer;"></span>
+                        <span class="sign-out" ><a href="SignIn.html">Cerrar Sesion</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <dialog class="modal" id="modal">
+                <div class="modal-container" id="modal-container">
+
+                    <div class="card-container">
+                
+                        <div class="front">
+                            <div class="image">
+                                <img src="assets/images/chip.png" alt="Chip/Tarjeta">
+                                <img src="assets/images/visa.png" alt="Marca/Tarjeta">
+                            </div>
+                            <div class="card-number-box">################</div>
+                            <div class="flexbox">
+                                <div class="box">
+                                    <span>Titular de la tarjeta</span>
+                                    <div class="card-holder-name">Nombre completo</div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="back">
+                            <div class="stripe"></div>
+                            <div class="box">
+                                <span>cvv</span>
+                                <div class="cvv-box"></div>
+                                <img src="./assets/images/visa.png" alt="">
+                            </div>
+                        </div>
+                
+                    </div>
+                
+                    <form action="" onsubmit="return false">
+                        <div class="inputBox">
+                            <span>Numero de Tarjeta</span>
+                            <input type="text" maxlength="16" class="card-number-input" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Titular de la Tarjeta</span>
+                            <input type="text" class="card-holder-input" required>
+                        </div>
+                        <div class="flexbox">
+                            <div class="inputBox">
+                                <!-- Esto es para si luego es necesario agregar un campo de seleccion -->
+                                <div name="" id="" class="month-input"></div>
+                            </div>
+                            <div class="inputBox">
+                            <!-- Esto es para si luego es necesario agregar un campo de seleccion -->
+                                <div name="" id="" class="year-input"></div>
+                            </div>
+                            <div class="inputBox">
+                                <span>cvv</span>
+                                <input type="text" maxlength="4" class="cvv-input" required>
+                            </div>
+                        </div>
+                        <div id="loader"></div>
+                        <!-- <input type="submit" value="Pagar" id="Pagar" class="submit-btn" onclick="sendToPayment()"> -->
+                        <!-- <a href="pago_exito.html"> -->
+                            <button id="Pagar" type="submit" class="submit-btn" onclick="openPopup()">Pagar</button>
+                            
+                        <!-- </a> -->
+                        <!-- Verificar este codigo del Load que se está cargando demasiado rapido y hay que ponerlo que cargue al tiempo de la confirmación de la transacción -->
+            
+            
+                         <div class="loader-overlay" id="loaderOverlay">
+                            <div class="loader">
+                                <div class="loader-inner"></div>
+                            </div>
+                            <p>Procesando pago...</p>
+                        </div>
+            
+                        <!-- Verificar este codigo del Load que se está cargando demasiado rapido y hay que ponerlo que cargue al tiempo de la confirmación de la transacción -->
+            
+            
+                        
+                        <!-- <input type="button" value="Volver" class="submit-btn" id="cerrar-modal"> -->
+                        <a href="consultas.html">
+                            <button type="button" class="submit-btn" id="cerrar-modal">Volver</button>
+                        </a>
+                    </form>
+                
+                </div>  
+            
+        </main>
+        <div class="contenedor">
+            <h1 class="logo">Realiza tu consulta aquí</h1>
+            <div class="wrapper animated bounceInLeft">
+              <div class="info-empresa">
+                <h3>Mensaje de PsicoEspacio</h3>
+                <ul class="servicios">
+                  <li><i class=""></i>Realiza tus consultas en tiempo real y sin ninguna dificultad, completa el formulario para poder consultarte.</li>
+                  <li><i class=""></i>Cualquier inquietud puedes comunicarte con nosotros por nuestras redes sociales o a tráves de nuestros contactos de soporte técnico: <br><br></li>
+                  <li><i class=""></i> Correo Electrónico: psicoespacio@outlook.es</li>
+                  <li><i class=""></i> Contacto: <br> 829-934-2026</li>
+                </ul>
+              </div>
+              <div class="contacto">
+                <h3>Completa los campos faltantes:</h3>
+                <form class="formulario" onsubmit="return false">
+                  <p>
+                    <label>Nombre Completo(Default)</label>
+                    <input type="text" name="nombre" required disabled>
+                  </p>
+                  <p>
+                    <label>Correo Electrónico(Default)</label>
+                    <input type="text" name="empresa" disabled>
+                  </p>
+                  <p>
+                    <label>Edad</label>
+                    <input type="number" name="edad" required disabled>
+                  </p>
+                  <p>
+                    <label>Teléfono</label>
+                    <input type="text" name="teléfono" required disabled>
+                  </p>
+                  <p>
+                    <label>Estatus(Default)</label>
+                    <input type="text" name="teléfono" required disabled>
+                  </p>
+                  <p>
+                    <label>Servicio</label>
+                    <select name="" id="">
+                        <option value="">Selecciona un servicio</option>
+                        <option value="">Terapia Individual</option>
+                        <option value="">Terapia Grupal</option>
+                        <option value="">Terapia Familiar</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label>Antecedentes médicos psicológicos</label>
+                    <select name="" id="">
+                        <option value="">Selecciona una opción</option>
+                        <option value="">No</option>
+                        <option value="">Si</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label>Historial de tratamientos previos</label>
+                    <select name="" id="">
+                        <option value="">Selecciona una opción</option>
+                        <option value="">No</option>
+                        <option value="">Si</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label>Tipo de cita</label>
+                    <select name="" id="">
+                        <option value="">Selecciona una opción</option>
+                        <option value="">Virtual</option>
+                        <option value="">Presencial</option>
+                    </select>
+                  </p>
+                  <p>
+                    <label>Metodo de pago</label>
+                    <select name="" id="payment-options" onchange="helper()">
+                        <option value="">Selecciona una opción</option>
+                        <option value="Tarjeta">Tarjeta</option>
+                        <option value="Efectivo">Efectivo</option>
+                    </select>
+                  </p>
+                  <p class="full">
+                    <label>Motivo de consulta</label>
+                    <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+                  </p>
+                  <p class="full">
+                    <button class="boton-enviar" id="boton-consultar">Consultar</button>
+                  </p>
+                </form>
+                
+            </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+        <script>
+
+
+            document.querySelector('.card-number-input').oninput = () =>{
+            document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
+        }
+        
+        document.querySelector('.card-holder-input').oninput = () =>{
+            document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
+        }
+        
+        document.querySelector('.month-input').oninput = () =>{
+            document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
+        }
+        
+        document.querySelector('.year-input').oninput = () =>{
+            document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
+        }
+        
+        document.querySelector('.cvv-input').onmouseenter = () =>{
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
+        }
+        
+        document.querySelector('.cvv-input').onmouseleave = () =>{
+            document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
+            document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
+        }
+        
+        document.querySelector('.cvv-input').oninput = () =>{
+            document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
+        }
+
+        let actModal = document.getElementById("modal");
+        let openModal = document.getElementById("boton-consultar");
+        let closeModal = document.getElementById("cerrar-modal")
+
+        
+        // let selected = options.options[options.selectedIndex];
+        // let selected_value = selected.text;
+        // let selText = document.getElementById('payment-options').options[document.getElementById('payment-options').selectedIndex].text
+        
+        const element = document.getElementById("payment-options")
+        
+        
+        
+        element.onchange = function(){
+            console.log(this.value)
+            if(this.value === "Tarjeta"){
+                openModal.addEventListener('click', () => {
+                    actModal.show()
+                    console.log(this.value)
+                })
+            }
+        }
+
+        let popup = document.getElementById("popup");
+        let formulario = document.getElementById("modal-container");
+
+                    // Hackiest of the hackiest
+        // function pressKey(){
+        //     let escape = new KeyboardEvent('keydown', {
+        //         key: 'Escape',
+        //         code: 'Escape',
+        //         keyCode: 27,
+        //         which: 27,
+        //         bubbles: true,
+        //         cancelable: true
+        //     })
+
+        //     let target = document.getElementById("modal")
+        //     target.dispatchEvent(escape)
+        // }
+        
+        function openPopup() {
+            document.getElementById("loader").style.display = "block";
+
+            setTimeout(() => {
+                popup.classList.add("open-popup");
+                formulario.classList.add("formulario-gone");
+                document.getElementById("loader").style.display = "none"
+                // Segundos de espera -> Actualmente 10
+            }, 10000);
+            
+            // pressKey()
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        function prevent(){
+            return false;
+        }
+
+        </script>
+        <script src="assets/js/notif.js"></script>
+        <!-- <script src="assets/js/app.js"></script> -->
+</body>
+
+</html>

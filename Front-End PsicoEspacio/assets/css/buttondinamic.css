@@ -1,0 +1,43 @@
+#paragraph {
+    text-align: center;
+    margin-top: 75px;
+  }
+  
+  #buttton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    font-size: 14px;
+    padding: 25px 45px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 500px;
+    font-weight: bold;
+    font-family: Arial;
+    background: red;
+    background-size: 1800% 100%;
+    -webkit-animation: rainbow 5s linear infinite;
+    animation: rainbow 5s linear infinite;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  @-webkit-keyframes rainbow {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }

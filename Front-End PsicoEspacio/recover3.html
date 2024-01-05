@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recuperar mi cuenta</title>
+
+    <link rel="icon" href="assets/images/LOGO PSICOESPACIO .jpeg">
+    <!-- Enlace al archivo CSS en la carpeta "css" -->
+    <link rel="stylesheet" href="assets/css/recover.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/raw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <form action="#" method="post" onsubmit="return validarCorreo()">
+                    <h2>Recuperar mi cuenta</h2>
+                    <h3>PsicoEspacio</h3>
+
+                    <div class="input-contenedor">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" required>
+                        <label for="password">Nueva Contraseña</label>
+                    </div>
+
+                    <div class="input-contenedor">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" required>
+                        <label for="password">Confirmar Contraseña</label>
+                    </div>
+                    
+                    <div class="olvidar">
+                        <label>
+                            <input type="checkbox" name="recordar"> Ver mi contraseña
+                        </label>
+                    </div>
+
+                    <button type="submit" onclick="openPopup()">Cambiar contraseña</button>
+
+                </form>
+
+                <div class="registrar">
+                   
+                </div>
+            </div>
+
+            <div class="pop-up" id="popup">
+                <img src="assets/images/404-tick.png">
+                <h2>Se ha cambiado su contraseña</h2>
+                <p>Su contraseña se ha actualizado correctamente, ya puede iniciar sesión y continuar con su navegación por PsicoEspacio.</p>
+                <button type="button" onclick="window.location.href = 'SignIn.html'">Volver al inicio de sesión</button>
+            </div>
+        </div>
+
+
+        
+        <div id="reloj">
+            <span id="hora"></span> :
+            <span id="minutos"></span> :
+            <span id="segundos"></span>
+        </div>      
+        
+        <a href="recover2.html" class="btn" style="--clr:#7371fc;"><span>Volver</span></a>
+        
+    </section>
+
+    <script>
+        let popup = document.getElementById("popup");
+        let formulario = document.getElementById("formulario");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+            formulario.classList.add("formulario-gone");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        function prevent(){
+            return false;
+        }
+    </script>
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/reloj.js"></script>
+    <script src="assets/js/button.js"></script>
+
+
+</body>
+</html>

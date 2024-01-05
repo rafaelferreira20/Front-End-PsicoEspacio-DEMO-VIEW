@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/HD-wallpaper-neon-wave-futuristic-city.jpg') center/cover;
+}
+
+/*nuevos cambios en el contenedor*/
+.contenedor {
+    position: relative;
+    width: 360px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor {}
+
+/* Estilos del título principal */
+.contenedor h2 {
+    font-size: 1.6rem;
+    color: azure;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor h3 {
+    font-size: 88%;
+    color: azure;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-contenedor {
+    position: relative;
+    margin: 26px 0;
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+}
+
+.input-contenedor label {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s;
+    font-weight: bold;
+    transition: top 0.3s, font-size 0.3s;
+    font-weight: bold;
+}
+
+.input-contenedor input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 100px 0 10px;
+}
+
+/* Estilos del icono dentro del campo de entrada de datos */
+.input-contenedor i {
+    position: absolute;
+    color: #fff;
+    font-size: 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+
+/* Estilos del texto de "Olvidar contraseña" */
+.olvidar {
+    margin: -10px 0 10px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del enlace dentro del texto de "Olvidar contraseña" */
+.olvidar label input {
+    margin: 3px;
+}
+
+/* Estilos del enlace dentro del texto de "Olvidar contraseña" */
+.olvidar label a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-size: .9em;
+}
+
+/* Estilos del enlace al hacer hover */
+.olvidar label a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del botón de acceso */
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: #e1fffc;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+/* Estilos para animar las etiquetas de entrada cuando se enfocan o se completan */
+.input-contenedor input:focus~label,
+.input-contenedor input:valid~label {
+    top: -10px;
+    font-size: 0.9rem;
+}
+
+/* Estilos del botón al hacer hover */
+button:hover {
+    opacity: .5;
+}
+
+/* Estilos del texto de registro */
+.registrar {
+    color: aliceblue;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+/* Estilos del enlace de registro */
+.registrar p a {
+    text-decoration: none;
+    color: #f4f2ff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/* Estilos del enlace de registro al hacer hover */
+.registrar p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del reloj en la esquina inferior izquierda */
+#reloj {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: #ffffff;
+}

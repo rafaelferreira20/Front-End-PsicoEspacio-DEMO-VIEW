@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Paciente PsicoEspacio</title>
+
+    <link rel="icon" href="assets/images/LOGO PSICOESPACIO .jpeg">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/hotfixing.css">
+    <link rel="stylesheet" href="assets/css/testimonios.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <!-- Encabezado de la barra lateral -->
+        <div class="side-header">
+            <h3>PsicoEspacio</h3>
+        </div>
+
+        <div class="side-content">
+            <!-- Perfil del usuario -->
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(#)"></div>
+                <h4>Rafael Ferreira</h4>
+                <small>Paciente</small>
+            </div>
+
+            <!-- Menú de la barra lateral -->
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <a href="user.html">
+                            <span class="las la-home"></span>
+                            <small>Principal</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="perfil.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Perfil</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chats.html">
+                            <span class="las la-envelope"></span>
+                            <small>Chats</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="consultas.html">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Consultas</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Servicesuser.html">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Servicios</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="testimonios.html" class="active">
+                            <span class="las la-tasks"></span>
+                            <small>Testimonios</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header class="main-header-user">
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                
+                <div class="header-menu">
+                    <label for="">
+                       
+                    </label>
+                    
+                    <div class="notify-icon">
+                        <span class="las la-envelope" id="envelope" onclick="toggleMenuEnvelope()"></span>
+                        <span class="notify">4</span>
+
+                        <div class="submenu-wrap" id="subMenu">
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Mensaje</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="notify-icon">
+                        <span class="las la-bell" onclick="toggleMenuBell()"></span>
+                        <span class="notify">3</span>
+
+                        <div class="submenu-wrap" id="subMenuBell">
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="submenu">
+                                <div class="user-info">
+                                    <h4>Notificación</h4>
+                                    <p>Descripción.</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="user">
+                        <div class="bg-img" style="background-image: url(imagendelusuario)"></div>
+                        
+                        <span class="las la-power-off" style="cursor: pointer;"></span>
+                        <span class="sign-out" ><a href="SignIn.html">Cerrar Sesion</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <main>
+
+        <div class="container">
+            <h1>Foro de Testimonios</h1>
+            <h5 style="text-align: center;">Comparte con otros usuarios algún testimonio que haya cambiado tu vida y tu estado mental, quizás puedas ayudar a los demás a que no se sientan solos y a entender que las situaciones díficiles se pueden superar.</h5>
+    
+            <!-- Formulario para agregar testimonios -->
+            <form id="testimonial-form">
+                <textarea id="testimonial" placeholder="Escribe tu testimonio" required></textarea>
+                <button type="submit">Enviar Testimonio</button>
+            </form>
+    
+            <!-- Contenedor para mostrar los testimonios existentes -->
+            <div id="testimonial-list">
+                <!-- Aquí se cargarán los testimonios dinámicamente con JavaScript -->
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="/assets/js/testimonioscript.js"></script>
+    <script src="assets/js/notif.js"></script>
+    
+</body>
+
+</html>

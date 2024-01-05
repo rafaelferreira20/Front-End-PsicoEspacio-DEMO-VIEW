@@ -1,0 +1,334 @@
+:root {
+  --white-color: #ffffff;
+  --primary-color: #5d52ba;
+  --secondary-color: #0dcaf0;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #f65129;
+  --social-icon-link-bg-color: #7f73eb;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #e9eaeb;
+
+  --body-font-family: 'League Spartan', sans-serif;
+
+  --h1-font-size: 62px;
+  --h2-font-size: 48px;
+  --h3-font-size: 36px;
+  --h4-font-size: 32px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 20px;
+  --btn-font-size: 16px;
+  --copyright-font-size: 14px;
+
+  --border-radius-large: 100px;
+  --border-radius-medium: 30px;
+  --border-radius-small: 10px;
+
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+body {
+  font-family: var(--body-font-family);
+}
+
+
+/*---------------------------------------
+  TYPOGRAPHY               
+-----------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.5px;
+}
+
+h1,
+h2 {
+  letter-spacing: -1.5px;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  line-height: normal;
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+}
+
+p {
+  color: #ffffff;
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+ul li {
+  color: #ffffff;
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+
+/*---------------------------------------
+  SECTION               
+-----------------------------------------*/
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-bg {
+  background: var(--section-bg-color);
+}
+
+.section-overlay {
+  background: rgba(0, 0, 0, 0.85);
+  background: var(--custom-btn-bg-color);
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.section-overlay+.container {
+  position: relative;
+}
+
+.back-top-icon {
+  background: var(--secondary-color);
+  width: 65px;
+  color: var(--white-color);
+  font-size: var(--h4-font-size);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.back-top-icon:hover {
+  background: var(--custom-btn-bg-color);
+  color: var(--white-color);
+}
+
+.custom-block {
+  background: var(--primary-color);
+  border-top: 20px solid var(--secondary-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 30px 50px;
+}
+
+.custom-icon {
+  color: var(--primary-color);
+}
+
+.instagram-block {
+  position: relative;
+  height: 100%;
+}
+
+.instagram-block-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav[aria-label="breadcrumb"] {
+  background: var(--white-color);
+  border-radius: var(--border-radius-large);
+  display: inline-block;
+  padding: 7px 16px 3px 16px;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+
+/*---------------------------------------
+  CUSTOM FORM               
+-----------------------------------------*/
+.custom-form .input-group {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius-medium);
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+.input-group-text {
+  background: transparent;
+  border: 0;
+  padding-right: 0;
+}
+
+.custom-form label {
+  margin-bottom: 5px;
+}
+
+.custom-form .form-control {
+  background-color: var(--white-color);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-medium);
+  box-shadow: none;
+  color: var(--p-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  outline: none;
+}
+
+.custom-form button[type="submit"] {
+  background: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+  font-size: var(--p-font-size);
+  font-weight: var(--font-weight-normal);
+  transition: all 0.3s;
+  margin-bottom: 24px;
+}
+
+.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:focus {
+  background: var(--secondary-color);
+  border-color: transparent;
+}
+
+
+/*---------------------------------------
+  SITE HEADER              
+-----------------------------------------*/
+.site-header {
+  background-image: url('../images/site-header/close-up-young-business-team-working.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.site-header .section-overlay {
+  background: var(--primary-color);
+}
+
+
+
+/*---------------------------------------
+  ABOUT              
+-----------------------------------------*/
+.about-page .about-section {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+.about-section .custom-text-block {
+  background: var(--secondary-color);
+}
+
+.about-image-wrap,
+.video-thumb {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.about-info {
+  background: var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  border-top: 30px solid var(--secondary-color);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+  padding: 20px;
+}
+
+.about-info-text h4 {
+  font-weight: var(--font-weight-normal);
+}
+
+.about-image-border-radius {
+  border-radius: var(--border-radius-medium);
+}
+
+.about-image {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
+
+.custom-border-radius-start {
+  border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
+}
+
+.custom-border-radius-end {
+  border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+}
+
+.video-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.youtube-icon {
+  background: var(--custom-btn-bg-color);
+  font-size: var(--h2-font-size);
+  color: var(--white-color);
+  border-radius: var(--border-radius-large);
+  width: 90px;
+  height: 90px;
+  line-height: 110px;
+  text-align: center;
+  display: block;
+  animation: pulse-animation 2s infinite;
+  transition: all 0.5s;
+}
+
+.youtube-icon:hover {
+  color: var(--white-color);
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}

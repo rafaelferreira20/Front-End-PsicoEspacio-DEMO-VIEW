@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/4.4/examples/album/"/>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"/>
+
+ 
+    <title>Salud Mental PsicoEspacio</title>
+
+    <link rel="icon" href="assets/images/LOGO PSICOESPACIO .jpeg">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/headerarea.css">
+    <link rel="stylesheet" href="assets/css/raw.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/buttonmental.css">
+    <link href="assets/css/features.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/buttonmental.css">
+    
+    <link rel="stylesheet" href="assets/css/alt_user.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <style>
+      .jumbotron {
+        margin-top: 0 !important;
+      }
+      body{
+        overflow-x: hidden;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      h4 {
+        text-align: center;
+      }
+
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .card-body {
+        /* position: relative; */
+        padding: 0 !important;
+      }
+
+      .card-body::before{
+          content: '';
+          display: block;
+          position: absolute;
+          height: 0%;
+          width: 100%;
+          bottom: 0;
+          transition: height 0.5s ease-out;
+          background: linear-gradient(to bottom, transparent 0%,#64ccc5 100%);
+      }
+
+      .card-body:hover:before{
+        height: 30%;
+      } 
+
+      .btn-group{
+        margin-bottom: 20px;
+      }
+    </style>
+      
+  </head>
+
+
+
+  <body cz-shortcut-listen="true" class="mentalbody">
+    <!-- <header>
+      <div class="header-content">
+          <label for="menu-toggle">
+              <span class="las la-bars"></span>
+          </label>
+          
+          <div class="header-menu">
+              <label for="">
+                  <span class="las la-search"></span>
+              </label>
+              
+              <div class="notify-icon">
+                  <span class="las la-envelope"></span>
+                  <span class="notify">4</span>
+              </div>
+              
+              <div class="notify-icon">
+                  <span class="las la-bell"></span>
+                  <span class="notify">3</span>
+              </div>
+              
+              <div class="user">
+                  <div class="bg-img" style="background-image: url(imagendelusuario)"></div>
+                  
+                  <span class="las la-power-off"></span>
+                  <span class="sign-out"><a href="SignIn.html">Cerrar Sesion</a></span>
+              </div>
+          </div>
+      </div>
+  </header> -->
+      <!-- ***** Header Area End ***** -->
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>La Salud Mental Importa</h1>
+          <p class="lead text-muted">
+            Tu salud mental es la base de tu felicidad, y nuestro sitio web está diseñado para ser tu guía. 
+            Aquí encontrarás una gran cantidad de recursos, desde artículos sobre mindfulness y autocuidado hasta conocimientos expertos sobre el manejo del estrés y la mejora de la resiliencia. 
+            Únete a nosotros en este viaje hacia una mejor salud mental, donde cada paso hacia adelante es un paso hacia una vida más plena.
+          </p>
+        </div>
+      </section>
+
+      <div class="album">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="p-card card mb-4 shadow-sm">
+                  <img class="card-img" src="./assets/images/enfermedades/depresion.webp" alt="Depresion" srcset="">
+                  <h4 class="text-on-top">Depresion</h4>
+                </svg>
+                <div class="card-body">
+                  <p class="card-text">
+                    La depresión es una enfermedad que se caracteriza por una tristeza persistente 
+                    y por la pérdida de interés en las actividades con las que normalmente se disfruta, 
+                    así como por la incapacidad para llevar a cabo las actividades cotidianas, durante al menos dos semanas.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'depresion.html'">
+                        Ver mas...
+                      </button>
+                    </div>
+                    <!-- <small class="text-muted">9 mins</small> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/ansiedad.jpg" alt="Ansiedad" srcset="">
+                    <h4 class="text-on-top">Ansiedad</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        La ansiedad es una sensación de nerviosismo, preocupación o malestar que forma parte de la experiencia humana normal. También está presente en una amplia gama de trastornos psiquiátricos, incluidos el trastorno de ansiedad generalizada, el trastorno de angustia.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'ansiedad.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/tbipolar.jpg" alt="Trastorno Bipolar" srcset="">
+                    <h4 class="text-on-top">Trastorno Bipolar</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        El trastorno bipolar es una afección del estado de ánimo que puede provocar cambios de ánimo intensos: En ocasiones puede sentirse extremadamente "animado", eufórico, irritable o con energía. Esto se conoce como episodio maníaco. Otras veces puede sentirse deprimido o triste.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'bipolar.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/ESQUIZOFRENIA-00.jpg" alt="Esquizofrenia" srcset="">
+                    <h4 class="text-on-top">Esquizofrenia</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        La esquizofrenia es una enfermedad mental grave que afecta la forma en que una persona piensa, siente y se comporta. Las personas con esquizofrenia pueden parecer como si hubieran perdido el contacto con la realidad, lo que puede ser angustioso para ellas, sus familiares y amigos.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'esquizofrenia.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/ptsd.jpg" alt="Trastorno de estres postraumatico" srcset="">
+                    <h4 class="text-on-top">Trastorno de Estres Postraumatico</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        El trastorno de estrés postraumático (TEPT) es una afección de salud mental que algunas personas desarrollan tras experimentar o ver algún evento traumático. Este episodio puede poner en peligro la vida. Pero a veces el evento no es necesariamente peligroso.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'TEPT.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/ocd2.png" alt="Trastorno obsesivo-compulsivo" srcset="">
+                    <h4 class="text-on-top">Trastorno obsesivo-compulsivo</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        El trastorno obsesivo compulsivo (TOC) se caracteriza por un patrón de pensamientos y miedos no deseados (obsesiones) que provocan comportamientos repetitivos (compulsiones). Estas obsesiones y compulsiones interfieren en las actividades diarias.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'TOC.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/panic.avif" alt="Trastorno de panico" srcset="">
+                    <h4 class="text-on-top">Trastorno de panico</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        Las personas con trastorno de pánico tienen ataques repentinos y frecuentes. Estos ataques se caracterizan por una ola repentina de temor o incomodidad, o bien, una sensación de perder el control, incluso cuando no hay un peligro real o un factor desencadenante claro.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'panico.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/borderline.png" alt="Trastorno de la personalidad borderline" srcset="">
+                    <h4 class="text-on-top">Trastorno de la personalidad Borderline</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        El trastorno límite de la personalidad es un trastorno de la salud mental que impacta la forma en que piensas y sientes acerca de ti mismo y de los demás, causando problemas para insertarte normalmente en la vida cotidiana. Incluye problemas de autoimagen y dificultad para manejar las emociones.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'TPB.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-card card mb-4 shadow-sm">
+                    <img class="card-img" src="./assets/images/enfermedades/toc.webp" alt="Trastorno por deficit de atencion e hiperactividad" srcset="">
+                    <h4 class="text-on-top">Trastorno por deficit de atencion e hiperactividad</h4>
+                  </svg>
+                  <div class="card-body">
+                    <p class="card-text">
+                        Las personas con el TDAH pueden tener problemas para prestar atención, controlar conductas impulsivas (podrían actuar sin pensar en el resultado de sus acciones) o pueden ser demasiado activos. Aunque el TDAH no tiene cura, se puede controlar eficazmente.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button
+                          type="button"
+                          class="purpleish btn btn-sm btn-outline-secondary" onclick="window.location.href = 'TDAH.html'">
+                          Ver mas...
+                        </button>
+                      </div>
+                      <!-- <small class="text-muted">9 mins</small> -->
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+
+        <!-- ATENCION: Lo que está puesto en comentario que es parte del footer es para poner el footer de esa manera si se quiere
+        pero con la que ahora mismo se encuentra pues entiendo que se ve excelente así, asi que lo podemos dejar ahí
+        pero tenemos este como referencia por si queremos hacerle alguna actualización. -->
+        
+         <!-- <div class="footer-content">
+            <h3>PsicoEspacio</h3>
+            <p>Muchas gracias por visitar nuestro espacio, dedicado para tí y los tuyos, siguenos en nuestras redes sociales y no te pierdas de las actualizaciones que tenemos para tí.</p>
+            <ul class="socials">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>-->
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assets/images/ciudad-futurista-estilo-retro_3840x2160_xtrafondos.com.jpg');">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 text-center">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Agenda tus citas de manera online y sin mucho esfuerzo.</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img src="assets/images/LOGO PSICOESPACIO .jpeg" alt="PsicoEspacio" width="32" height="32" class="rounded-circle border border-white">
+                    <img src="assets/images/fb_icon_325x325.png" alt="Facebook" width="32" height="32" class="rounded-circle border border-white">
+                    <img src="assets/images/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram" width="32" height="32" class="rounded-circle border border-white">
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                    <small>En línea</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                    <small>Desde casa</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="footer-bottom">
+            <p>PsicoEspacio Copyright &copy;2023 Todos Los Derechos Reservados.</p>
+          </div>
+        </footer>  
+        
+    <a href="user.html" class="btns" style="--clr:#7371fc;"><span>Home</span></a>
+    
+    
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/services.js"></script>
+      <script src="assets/js/isotope.min.js"></script>
+        <script src="assets/js/owl-carousel.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/reloj.js"></script>
+        <script src="assets/js/buttonmental.js"></script>
+    
+
+
+  </body>
+  <div id="slickdeals" data-initialized="1"></div>
+</html>

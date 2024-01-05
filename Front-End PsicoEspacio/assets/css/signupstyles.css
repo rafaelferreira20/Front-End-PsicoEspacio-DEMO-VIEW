@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../images/HD-wallpaper-neon-wave-futuristic-city.jpg') center/cover;
+}
+
+
+.contenedor{
+    position: relative;
+    width: 470px;
+    border: 2px solid rgba(255, 255, 255, .6);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    height: 480px;
+    padding: 10px;
+    display: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenedor h2 {
+    font-size: 1.0rem; /* Reducimos el tamaño de fuente */
+    color: azure;
+    text-align: center;
+    margin-bottom: 1px; /* Reducimos el margen inferior */
+}
+
+.contenedor h3{
+    font-size: 75%;
+    color: azure;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.input-contenedor {
+    position: relative;
+    margin: 13px 0; /* Reducimos el margen superior e inferior */
+    width: 100%;
+    border-bottom: 1px solid #ffffff; /* Reducimos el grosor del borde inferior */
+}
+
+.input-contenedor label{
+    position: absolute;
+    top: -10;
+    left: 0;
+    color: aliceblue;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .4s;
+    font-weight:bold;
+    padding: 0 5px;
+}
+
+.input-contenedor input{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: -.9rem;
+    color: #fff;
+    padding: 22px 0;
+}
+
+
+
+.input-contenedor i{
+    position: absolute;
+    color: #fff;
+    font-size: 1.3rem;
+    top: 10px;
+    right: 8px;
+}
+
+.olvidar{
+    margin: -10px 0 10px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.olvidar label input{
+    margin: 10px;
+}
+
+.olvidar label a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+    font-size: .9em;
+}
+
+.olvidar label a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width : 100%;
+    height: 40px;
+    border-radius: 50px;
+    background: #e1fffc;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.9rem;
+    transition: .4s;
+}
+
+.input-contenedor label{
+    position: absolute;
+    top: 50%;
+    left: 10;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s;
+    font-weight: bold;
+    transition: top 0.3s, font-size 0.3s;
+    font-weight: bold;
+}
+
+
+
+.input-contenedor input:focus ~ label,
+.input-contenedor input:valid ~ label {
+    top: 1px;
+    font-size: 0.9rem;
+}
+
+button:hover{
+    opacity: .5;
+}
+
+/*Bien*/
+.registrar{
+    color: aliceblue;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+/*Bien*/
+.registrar p a{
+    text-decoration: none;
+    color: #f4f2ff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+/*Bien*/
+.registrar p a:hover{
+    text-decoration: underline;
+}
+
+
+/*Bien*/
+#reloj {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+

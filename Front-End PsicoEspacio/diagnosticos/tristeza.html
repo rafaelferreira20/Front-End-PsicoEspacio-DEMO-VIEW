@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnostico</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-family: 'Poppins', sans-serif;
+        /* overflow-y: hidden; */
+    }
+    main {
+        background-color: antiquewhite;
+        width: 500px;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+    button {
+        padding: 5px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    .imagedate-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .diagnostico, .purple {
+        color: #610C9F;
+    }
+
+    .recomendaciones, .blue {
+        color: #0766AD;
+    }
+
+    .end p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+</style>
+<body>
+    <main>
+        <div class="imagedate-container">
+            <img src="/img/LOGO PSICOESPACIO_.png" alt=""> 
+            <p id="date-container"></p>
+        </div>
+
+        <h3>@USUARIO(PACIENTE)</h3>
+        <p>A continuación podrás ver el diagnostico de tu estado mental y algunas recomendaciones para mejorar</p>
+        <h3 class="diagnostico">Diagnostico</h3> 
+        <p>El estado mental actual es de tristeza, puede ser indicativo de un posible <b>trastorno del estado de ánimo</b>, como la depresión. Es importante buscar la opinión de un profesional de la salud mental para obtener un diagnóstico preciso y recibir el tratamiento adecuado.</p>
+        <h3 class="recomendaciones">Recomendaciones:</h3>
+        <ul>
+            <li>1 - Busca apoyo emocional en amigos o familiares cercanos.</li>
+            <li>2 - Realiza actividades que te hagan sentir bien, como escuchar música, leer o practicar deporte.</li>
+            <li>3 - Dedica tiempo para cuidar de ti mismo/a, tanto física como mentalmente.</li>
+            <li>4 - Evita el aislamiento social y busca compañía en personas positivas.</li>
+            <li>5 - Practica técnicas de relajación, como la meditación o la respiración profunda.</li>
+            <li>6 - Establece metas realistas y alcanzables para sentirte motivado/a.</li>
+            <li>7 - Busca ayuda profesional si sientes que la tristeza persiste o afecta tu vida diaria.</li>
+            <li>8 - Exprésate a través de la escritura o el arte para liberar tus emociones.</li>
+            <li>9 - Dedica tiempo a hacer actividades que te gusten y te hagan feliz.</li>
+            <li>10 - Recuerda que la tristeza es una emoción temporal y que siempre hay esperanza de sentirte mejor.</li>
+        </ul>
+        <hr>
+        <div class="end">
+        <p>Muchas gracias @USUARIO(PACIENTE) por utilizar <span class="blue">Psico</span><span class="purple">Espacio</span>, estamos aquí para brindarte apoyo y ayuda en tu camino hacia el bienestar emocional. Nuestra plataforma genera resultados personalizados que pueden ser descargados en formato PDF, proporcionándote información clara y concisa sobre tu estado mental actual. Creemos en la importancia de cuidar tu salud mental y estamos comprometidos en ayudarte a entender y abordar tus preocupaciones emocionales.</p>
+            <br>
+        <p><b>NOTA: ESTOS RESULTADOS HAN SIDO EVALUADOS POR UN PSICOLOGO PROFESIONAL Y HA BRINDADO LOS DIAGNOSTICOS Y LAS RECOMENDACIONES CORRESPONDIENTES PARA QUE TOMES ACCION CON TIEMPO Y PUEDAS RESOLVER CUALQUIER SITUACION QUE SE TE ESTE PRESENTANDO.</b></p>
+</div>
+    </main>
+    <br>
+    <div>
+        <button id="print" onclick="printDoc()">Imprimir diagnositico en PDF</button>
+    </div>
+    <script>
+        let date = new Date()
+
+        let year = date.getFullYear()
+        let month = date.getMonth() + 1
+        let day = date.getDate()
+
+        let cleanDate = day + " - " + month + " - " + year
+
+        let dateContainer = document.getElementById("date-container")
+
+        dateContainer.innerHTML = "<strong>" + "Fecha: " + cleanDate + "</strong>"
+
+        function printDoc() {
+        let button = document.getElementById('print');
+
+        button.style.display = 'none';
+        window.print();
+
+        setTimeout(function () {
+            button.style.display = 'block';
+        }, 1000);
+    }
+    </script>
+</body>
+</html>

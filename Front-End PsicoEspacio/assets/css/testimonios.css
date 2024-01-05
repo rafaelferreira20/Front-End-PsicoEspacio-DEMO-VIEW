@@ -1,0 +1,98 @@
+/* Contenedor principal */
+.container {
+    max-width: 900px; /* Ajusta el ancho máximo */
+    margin: 100px auto; /* Ajusta el margen superior a 40px, margen inferior a 20px */
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.2s;
+    box-shadow: 0 0 20px 0 rgba(69, 90, 100, 0.7);
+    border-radius: 5px;
+}
+
+
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+}
+
+/* Formulario y elementos de formulario */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #007bff;
+}
+
+/* Botón del formulario */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #940b92;
+}
+
+/* Lista de testimonios */
+#testimonial-list {
+    margin-top: 20px;
+}
+
+/* Testimonios individuales */
+.testimonial {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+}
+
+.testimonial:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos comunes para testimonios y respuestas */
+.testimonial, .reply {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.testimonial:hover, .reply:hover {
+    transform: scale(1.02);
+}
+
+/* Estilos de cuadro de chat */
+.testimonial {
+    background-color: #ffffff; /* Color de fondo del testimonio */
+    color: #000000; /* Color del texto en el testimonio */
+    border-radius: 15px; /* Bordes redondeados */
+    margin: 10px 0;
+    padding: 10px;
+}
+
